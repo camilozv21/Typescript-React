@@ -51,6 +51,5 @@ let numberAboveZero: boolean | number = false;
 for (let i = 0; i < numbers.length; i++) {
     if (numbers[i]) {
         numberAboveZero = numbers[i]
-
     }
 }
