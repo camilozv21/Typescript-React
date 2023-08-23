@@ -1,10 +1,11 @@
 // Instructions to every other class on how they can be a argument to 'addMarker'
-interface Mappable {
+export interface Mappable {
     location: {
         lat: number,
         lng: number
     };
     markerContent(): string;
+    color: string
 };
 
 export class CustomMap {
@@ -15,7 +16,8 @@ export class CustomMap {
             zoom: 1,
             center: {
                 lat: 0,
-                lng: 0}
+                lng: 0
+            }
          });
     }
 
